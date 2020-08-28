@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-07 06:24:56 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjEzOjQwICI7MjY3Ng=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjI0OjU2ICI7MTsyNzkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n" type="Real" array="False" size=""/>
+            <output expression="&quot;digite a quantidade de combustivel gasta, em litros&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;digite os quilometros rodados&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="n" expression="n2/n1"/>
+            <output expression="&quot;o consumo m&#233;dio foi de &quot; &amp; N &amp;&quot; km/l&quot;" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

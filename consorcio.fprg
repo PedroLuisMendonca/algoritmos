@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-07 06:30:46 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjI2OjA4ICI7MjY4NA=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjMwOjQ2ICI7MTsyNzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, n5" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o n&#250;mero total de presta&#231;&#245;es&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;digite a quantidade de presta&#231;&#245;es pagas&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;digite o valor das presta&#231;&#245;es&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="n4" expression="n2*n3"/>
+            <assign variable="n5" expression="n1*n3-n4"/>
+            <output expression="&quot;o valor que j&#225; foi pago &#233; de R$&quot;&amp;n4&amp;&quot; e o valor restante &#233; de R$&quot;&amp;n5" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

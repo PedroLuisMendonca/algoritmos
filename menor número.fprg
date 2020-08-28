@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-07 06:13:37 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjA3OjE1ICI7MjY4MQ=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjEzOjM3ICI7MTsyNzkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Real" array="False" size=""/>
+            <output expression="&quot;escreva o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;escreva o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1&lt;n2">
+                <then>
+                    <output expression="&quot;o menor n&#250;mero &#233;&quot;" newline="True"/>
+                    <output expression="n1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;o menor n&#250;mero &#233;&quot;" newline="True"/>
+                    <output expression="n2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

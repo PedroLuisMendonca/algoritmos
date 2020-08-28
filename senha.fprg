@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-07 06:33:44 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjMxOjAyICI7MjY3NA=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMDc7IjA2OjMzOjQ0ICI7MTsyNzkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite um c&#243;digo de 4 algarismos&quot;" newline="True"/>
+            <input variable="n1"/>
+            <if expression="n1=5240">
+                <then>
+                    <output expression="&quot;c&#243;digo correto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;c&#243;digo incorreto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
