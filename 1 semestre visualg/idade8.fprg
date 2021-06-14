@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-30 06:20:51 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzA7IjA1OjUzOjM3ICI7MjY4MQ=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzA7IjA2OjIwOjUxICI7MTsyNzgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n1, n2, n3, n4, n5, n6" type="Integer" array="False" size=""/>
+            <declare name="n7, n8" type="Real" array="False" size=""/>
+            <assign variable="n1" expression="0"/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="n3" expression="0"/>
+            <assign variable="n4" expression="0"/>
+            <assign variable="n5" expression="0"/>
+            <assign variable="n6" expression="0"/>
+            <do expression="n6 &lt; 8">
+                <output expression="&quot;Digite a idade da pessoa&quot;" newline="True"/>
+                <input variable="n"/>
+                <assign variable="n6" expression="n6 + 1"/>
+                <if expression="n &lt; 16">
+                    <then>
+                        <assign variable="n1" expression="n1 + 1"/>
+                    </then>
+                    <else>
+                        <if expression="(n &gt; 15) == (n &lt; 31)">
+                            <then>
+                                <assign variable="n2" expression="n2 + 1"/>
+                            </then>
+                            <else>
+                                <if expression="(n &gt; 30) == (n &lt; 46)">
+                                    <then>
+                                        <assign variable="n3" expression="n3 + 1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="(n &gt; 45) == (n &lt; 61)">
+                                            <then>
+                                                <assign variable="n4" expression="n4 + 1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="n &gt; 60">
+                                                    <then>
+                                                        <assign variable="n5" expression="n5 + 1"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Na primeira faixa et&#225;ria tem &quot;&amp; n1 &amp; &quot; pessoas&quot;" newline="True"/>
+            <output expression="&quot;Na segunda faixa et&#225;ria tem &quot;&amp; n2 &amp; &quot; pessoas&quot;" newline="True"/>
+            <output expression="&quot;Na terceira faixa et&#225;ria tem &quot;&amp; n3 &amp; &quot; pessoas&quot;" newline="True"/>
+            <output expression="&quot;Na quarta faixa et&#225;ria tem &quot;&amp; n4 &amp; &quot; pessoas&quot;" newline="True"/>
+            <output expression="&quot;Na quinta faixa et&#225;ria tem &quot;&amp; n5 &amp; &quot; pessoas&quot;" newline="True"/>
+            <assign variable="n7" expression="(n1 / 8) * 100"/>
+            <assign variable="n8" expression="(n5 / 8) * 100"/>
+            <output expression="&quot;A porcentagem de pessoas na primeira faixa et&#225;ria &#233; de&quot;&amp; n7 &amp; &quot;%&quot;" newline="True"/>
+            <output expression="&quot;A porcentagem de pessoas na primeira faixa et&#225;ria &#233; de&quot;&amp; n8 &amp; &quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

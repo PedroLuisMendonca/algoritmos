@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-31 07:27:36 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA3OjEzOjQ2ICI7MjY4MA=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA3OjI3OjM2ICI7MTsyNzky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n1, n4, n6, n7" type="Integer" array="False" size=""/>
+            <declare name="n2, n3, n5" type="Real" array="False" size=""/>
+            <assign variable="n4" expression="0"/>
+            <assign variable="n5" expression="0"/>
+            <assign variable="n6" expression="0"/>
+            <assign variable="n7" expression="0"/>
+            <for variable="n" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Digite a idade da pessoa&quot;" newline="True"/>
+                <input variable="n1"/>
+                <output expression="&quot;DIgite a altura da pessoa em metros&quot;" newline="True"/>
+                <input variable="n2"/>
+                <output expression="&quot;DIgite o peso da pessoa&quot;" newline="True"/>
+                <input variable="n3"/>
+                <if expression="n1 &gt; 50">
+                    <then>
+                        <assign variable="n4" expression="n4 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="(n1 &gt; 9) == (n1 &lt; 21)">
+                    <then>
+                        <assign variable="n5" expression="n5 + n2"/>
+                        <assign variable="n7" expression="n7 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="n3 &lt; 40">
+                    <then>
+                        <assign variable="n6" expression="n6 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;A quantidade de pessoas com mais de 50 anos &#233;:&quot; &amp; n4" newline="True"/>
+            <output expression="&quot;A m&#233;dia de altura das pessoa com idade entre 10 e 20 anos &#233;:&quot; &amp; (n5 / n7)" newline="True"/>
+            <output expression="&quot;A porcentagem de pessoas com peso inferior a 40 kg &#233;:&quot; &amp; ((n6 / 5) * 100) &amp; &quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

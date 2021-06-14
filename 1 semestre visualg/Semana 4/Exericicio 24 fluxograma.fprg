@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-09-02 08:06:42 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA4OjM4OjAyICI7MjY4MA=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDktMDI7IjA4OjA2OjQyICI7NDsyNzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, nn, n1, n2" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="999999999"/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="n" expression="1"/>
+            <while expression="n != 0">
+                <output expression="&quot;DIgite o valor&quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="n &gt;= 0">
+                    <then>
+                        <assign variable="nn" expression="1"/>
+                        <if expression="nn = 1">
+                            <then>
+                                <if expression="n &lt; n1">
+                                    <then>
+                                        <assign variable="n1" expression="n"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="n &gt; n2">
+                                    <then>
+                                        <assign variable="n2" expression="n"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;S&#227;o v&#225;lido somente n&#250;meros positivos.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;O menor n&#250;mero &#233;:&quot; &amp; n1" newline="True"/>
+            <output expression="&quot;O maior n&#250;mero &#233;:&quot; &amp; n2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

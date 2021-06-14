@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-09-02 07:20:47 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA4OjEzOjM1ICI7MjY3OQ=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDktMDI7IjA3OjIwOjQ3ICI7MzsyNzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n4, n5, n6" type="Integer" array="False" size=""/>
+            <declare name="n1, n2, n3" type="Real" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <while expression="n != 3">
+                <output expression="&quot;Menu de op&#231;&#245;es&quot;" newline="True"/>
+                <output expression="&quot;1. M&#233;dia aritm&#233;tica&quot;" newline="True"/>
+                <output expression="&quot;2. M&#233;dia ponderada&quot;" newline="True"/>
+                <output expression="&quot;3. Sair&quot;" newline="True"/>
+                <output expression="&quot;Digite a op&#231;&#227;o desejada&quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="n = 1">
+                    <then>
+                        <output expression="&quot;Digite a primeira nota &quot;" newline="True"/>
+                        <input variable="n1"/>
+                        <output expression="&quot;Digite a segunda nota &quot;" newline="True"/>
+                        <input variable="n2"/>
+                        <output expression="&quot;A m&#233;dia aritm&#233;tica &#233;:&quot; &amp; (n1 + n2) / 2" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="n = 2">
+                            <then>
+                                <output expression="&quot;Digite a primera nota &quot;" newline="True"/>
+                                <input variable="n1"/>
+                                <output expression="&quot;Digite o peso da primeira nota &quot;" newline="True"/>
+                                <input variable="n4"/>
+                                <output expression="&quot;Digite a segunda nota &quot;" newline="True"/>
+                                <input variable="n2"/>
+                                <output expression="&quot;Digite o peso da segunda nota &quot;" newline="True"/>
+                                <input variable="n5"/>
+                                <output expression="&quot;Digite a terceira nota &quot;" newline="True"/>
+                                <input variable="n3"/>
+                                <output expression="&quot;Digite o peso da terceira nota &quot;" newline="True"/>
+                                <input variable="n6"/>
+                                <output expression="&quot;A m&#233;dia ponderada &#233;:&quot; &amp; ((n1*n4)+(n2*n5)+(n3*n6))/(n4+n5+n6)" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="n = 3">
+                                    <then>
+                                        <output expression="&quot;Voc&#234; saiu&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Comando Inv&#225;lido&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-31 07:59:52 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA3OjUxOjM2ICI7MjY4MQ=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA3OjU5OjUyICI7MTsyNzk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, s" type="String" array="False" size=""/>
+            <declare name="n, n1, n2, n3, n4, n5" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="0"/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="n3" expression="0"/>
+            <assign variable="n4" expression="0"/>
+            <assign variable="n5" expression="0"/>
+            <for variable="n" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Escreva qual seu sexo (masculino/feminino) &quot;" newline="True"/>
+                <input variable="s"/>
+                <output expression="&quot;Voc&#234; gostou do produto? Responda, s para sim ou n para n&#227;o&quot;" newline="True"/>
+                <input variable="c"/>
+                <if expression="(c = &quot;S&quot;) or (c =&quot;s&quot;)">
+                    <then>
+                        <assign variable="n1" expression="n1 + 1"/>
+                        <if expression="s = &quot;feminino&quot;">
+                            <then>
+                                <assign variable="n3" expression="n3 + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="(c = &quot;N&quot;) or (c = &quot;n&quot;)">
+                            <then>
+                                <assign variable="n2" expression="n2 + 1"/>
+                                <if expression="s = &quot;masculino&quot;">
+                                    <then>
+                                        <assign variable="n4" expression="n4 + 1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <if expression="s = &quot;masculino&quot;">
+                    <then>
+                        <assign variable="n5" expression="n5 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;O n&#250;mero de pessoas que respondeu sim &#233;:&quot; &amp; n1" newline="True"/>
+            <output expression="&quot;O n&#250;mero de pessoas que respondeu n&#227;o &#233;:&quot; &amp; n2" newline="True"/>
+            <output expression="&quot;O n&#250;mero de mulheres que respondeu sim &#233;:&quot; &amp; n3" newline="True"/>
+            <output expression="&quot;A porcentagem de homens que repondeu n&#227;o &#233;:&quot; &amp; ((n4 / n5) * 100) &amp; &quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

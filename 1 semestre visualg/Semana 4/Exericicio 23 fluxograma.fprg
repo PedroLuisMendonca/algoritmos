@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-09-02 07:18:56 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA4OjI4OjAwICI7MjY3Nw=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDktMDI7IjA3OjE4OjU2ICI7MjsyNzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n2" type="Integer" array="False" size=""/>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <while expression="n != 4">
+                <output expression="&quot;Menu de op&#231;&#245;es:&quot;" newline="True"/>
+                <output expression="&quot;1. Novo sal&#225;rio&quot;" newline="True"/>
+                <output expression="&quot;2. F&#233;rias&quot;" newline="True"/>
+                <output expression="&quot;3. D&#233;cimo Terceiro&quot;" newline="True"/>
+                <output expression="&quot;4. Sair&quot;" newline="True"/>
+                <output expression="&quot;Digite a op&#231;&#227;o desejada.&quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="n = 1">
+                    <then>
+                        <output expression="&quot;Digite o seu sal&#225;rio &quot;" newline="True"/>
+                        <input variable="n1"/>
+                        <if expression="n1 &lt; 210">
+                            <then>
+                                <output expression="&quot;Seu novo sal&#225;rio &#233; de:&quot; &amp; (n1 * 115/100)" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="(n1 &gt;= 210) == (n1 &lt;= 600)">
+                                    <then>
+                                        <output expression="&quot;Seu novo sal&#225;rio &#233; de:&quot; &amp; (n1 * 11/10)" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="n1 &gt; 600">
+                                            <then>
+                                                <output expression="&quot;Seu novo sal&#225;rio &#233; de:&quot; &amp; (n1 * 105/100)" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="n = 2">
+                            <then>
+                                <output expression="&quot;Digite o seu sal&#225;rio &quot;" newline="True"/>
+                                <input variable="n1"/>
+                                <output expression="&quot;O valor das suas f&#233;rias &#233; de:&quot; &amp; (n1 + (n1 * 1/3))" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="n = 3">
+                                    <then>
+                                        <output expression="&quot;Digite o seu sal&#225;rio &quot;" newline="True"/>
+                                        <input variable="n1"/>
+                                        <output expression="&quot;Digite o n&#250;mero de meses trabalhados, m&#225;ximo de 12 &quot;" newline="True"/>
+                                        <input variable="n2"/>
+                                        <output expression="&quot;O valor do seu d&#233;cimo terceiro &#233; de:&quot; &amp; n1 * n2 / 12" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="n = 4">
+                                            <then>
+                                                <output expression="&quot;Voc&#234; saiu.&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Op&#231;&#227;o inv&#225;lida.&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

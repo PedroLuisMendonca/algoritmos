@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-31 07:51:26 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA3OjI3OjQ4ICI7MjY4Nw=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA3OjUxOjI2ICI7MTsyNzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n1, n2, n3, n4, n5, n6" type="Integer" array="False" size=""/>
+            <assign variable="n3" expression="0"/>
+            <assign variable="n4" expression="0"/>
+            <assign variable="n5" expression="0"/>
+            <assign variable="n6" expression="0"/>
+            <for variable="n" start="1" end="15" direction="inc" step="1">
+                <output expression="&quot;Qual sua opini&#227;o do filme? Responda: 3-&#243;timo, 2-bom, 1-regular &quot;" newline="True"/>
+                <input variable="n1"/>
+                <output expression="&quot;Qual sua idade? &quot;" newline="True"/>
+                <input variable="n2"/>
+                <if expression="n1 = 3">
+                    <then>
+                        <assign variable="n3" expression="n3 + n2"/>
+                        <assign variable="n4" expression="n4 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="n1 = 1">
+                    <then>
+                        <assign variable="n5" expression="n5 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="n1 = 2">
+                    <then>
+                        <assign variable="n6" expression="n6 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;A idade m&#233;dia das pessoas que reponderam &#243;timo &#233;:&quot; &amp; (n3 / n4)" newline="True"/>
+            <output expression="&quot;A quantidade de pessoas que reponderam regular &#233;:&quot; &amp; n5" newline="True"/>
+            <output expression="&quot;A percentagem d pessoas que responderam bom &#233;:&quot; &amp; ((n6 / 15) * 100)&amp; &quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

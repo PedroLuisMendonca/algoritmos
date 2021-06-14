@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-31 08:27:52 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA4OjIxOjI2ICI7MjY3OA=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzE7IjA4OjI3OjUyICI7MTsyNzkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n2" type="Integer" array="False" size=""/>
+            <declare name="n1, n3" type="Real" array="False" size=""/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="n3" expression="0"/>
+            <do expression="n &gt; 0">
+                <output expression="&quot;Digite a idade &quot;" newline="True"/>
+                <input variable="n"/>
+                <output expression="&quot;Digite a altura &quot;" newline="True"/>
+                <input variable="n1"/>
+                <if expression="n &gt; 50">
+                    <then>
+                        <assign variable="n2" expression="n2 + 1"/>
+                        <assign variable="n3" expression="n3 + n1"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;A m&#233;dia da altura das pessoas com mais de 50 anos &#233;:&quot; &amp; n3 / n2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

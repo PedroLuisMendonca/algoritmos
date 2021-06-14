@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-30 06:30:59 "/>
+        <attribute name="created" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzA7IjA2OjIxOjA3ICI7MjY3NA=="/>
+        <attribute name="edited" value="VXN1YXJpbztVU1VBUklPLVBDOzIwMjAtMDgtMzA7IjA2OjMwOjU5ICI7MTsyNzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c" type="String" array="False" size=""/>
+            <declare name="n1, n2, n3" type="Real" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="n3" expression="0"/>
+            <for variable="n" start="1" end="15" direction="inc" step="1">
+                <output expression="&quot;Digite o c&#243;digo da compra&quot;" newline="True"/>
+                <input variable="c"/>
+                <output expression="&quot;Digite o valor da compra&quot;" newline="True"/>
+                <input variable="n1"/>
+                <if expression="(c = &quot;v&quot;) or (c = &quot;V&quot;)">
+                    <then>
+                        <assign variable="n2" expression="n2 + n1"/>
+                    </then>
+                    <else>
+                        <if expression="(c = &quot;p&quot;) or (c = &quot;P&quot;)">
+                            <then>
+                                <assign variable="n3" expression="n3 + n1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;O valor total das compras &#224; vista &#233;: &quot; &amp; n2" newline="True"/>
+            <output expression="&quot;O valor total das compras &#224; prazo &#233;: &quot; &amp; n3" newline="True"/>
+            <output expression="&quot;O valor total das compras efetuadas &#233; :&quot; &amp; (n2 + n3)" newline="True"/>
+            <output expression="&quot;O valor da primeira presta&#231;&#227;o das compras &#224; prazo juntas &#233;: &quot; &amp; (n3 / 3)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
